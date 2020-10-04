@@ -1,14 +1,11 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.com/kushagra7176/Valgrind-Exercise.svg?branch=master)](https://travis-ci.com/kushagra7176/Valgrind-Exercise)
+[![Coverage Status](https://coveralls.io/repos/github/kushagra7176/Valgrind-Exercise/badge.svg?branch=master)](https://coveralls.io/github/kushagra7176/Valgrind-Exercise?branch=master)
 ---
 
 ## Overview
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
+Valgrind Exercise
 
 ## Standard install via command-line
 ```
@@ -22,6 +19,14 @@ Run tests: ./test/cpp-test
 Run program: ./app/shell-app
 ```
 
+## How to use Valgrind
+```
+cd <path to repository>
+cd build/app
+valgrind --leak-check=full --log-file="<ouputfile.extension>" ./shell-app 
+valgrind --tool=callgrind  ./shell-app
+kcachegrind <generated callgrind.out... file> 
+```
 ## Building for code coverage (for assignments beginning in Week 4)
 ```
 sudo apt-get install lcov
