@@ -27,7 +27,7 @@ valgrind --leak-check=full --log-file="<ouputfile.extension>" ./shell-app
 valgrind --tool=callgrind  ./shell-app
 kcachegrind <generated callgrind.out... file> 
 ```
-## Building for code coverage (for assignments beginning in Week 4)
+## Building for code coverage (for assignments beginning in Week 5)
 ```
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
